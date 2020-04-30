@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://https://32thirtytwo.github.io/SIXIANG32-s-blog/</id>
     <title>Gridea</title>
-    <updated>2020-04-30T04:25:57.598Z</updated>
+    <updated>2020-04-30T05:12:12.037Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://https://32thirtytwo.github.io/SIXIANG32-s-blog/"/>
     <link rel="self" href="https://https://32thirtytwo.github.io/SIXIANG32-s-blog/atom.xml"/>
@@ -10,4 +10,26 @@
     <logo>https://https://32thirtytwo.github.io/SIXIANG32-s-blog/images/avatar.png</logo>
     <icon>https://https://32thirtytwo.github.io/SIXIANG32-s-blog/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[ABOUT ME]]></title>
+        <id>https://https://32thirtytwo.github.io/SIXIANG32-s-blog/post/about-me/</id>
+        <link href="https://https://32thirtytwo.github.io/SIXIANG32-s-blog/post/about-me/">
+        </link>
+        <updated>2020-04-30T04:58:34.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>我是SIXIANG，你也阔以叫我三十二，我是一名OIER，书法爱好者。</li>
+<li>邮箱：2392303708@qq.com</li>
+<li>QQ号码：2392303708(如果我不认识你就我就不加你QAQ）</li>
+<li>自学OI一年掌握了基本的语法，后来也报了班但是进度有点慢所以还是在自学一些高深的玩意儿，最近被树卡住了QAQ，哪个巨佬阔以私信我讲一下LCA的倍增法QAQ</li>
+<li>2009出生，小五</li>
+<li>沒有几个成就，自学OI一年2019合肥市市赛小学组3=200分QAQ，我太渣渣了</li>
+<li>OIer小窝月报联合创始人<br>
+<a href="https://www.luogu.com.cn/user/298549">在洛谷</a><br>
+<a href="https://atcoder.jp/users/SIXIANG">在ATcoder</a><br>
+<a href="https://codeforces.com/profile/SIXIANG">在codeforces</a><br>
+<a href="http://openjudge.cn/user/964665/">在openjudge</a><br>
+这就是我的大概了。</li>
+</ul>
+]]></content>
+    </entry>
 </feed>
