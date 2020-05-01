@@ -1,22 +1,91 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://32thirtytwo.github.io/SIXIANG32-s-blog/</id>
-    <title>SIXIANG&apos;s blog</title>
-    <updated>2020-05-01T01:50:57.895Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://32thirtytwo.github.io/SIXIANG32-s-blog/"/>
-    <link rel="self" href="https://32thirtytwo.github.io/SIXIANG32-s-blog/atom.xml"/>
-    <subtitle>蒟蒻SIXIANG（三十二）的blog</subtitle>
-    <logo>https://32thirtytwo.github.io/SIXIANG32-s-blog/images/avatar.png</logo>
-    <icon>https://32thirtytwo.github.io/SIXIANG32-s-blog/favicon.ico</icon>
-    <rights>All rights reserved 2020, SIXIANG&apos;s blog</rights>
-    <entry>
-        <title type="html"><![CDATA[线性表详解1]]></title>
-        <id>https://32thirtytwo.github.io/SIXIANG32-s-blog/post/xian-xing-biao-xiang-jie-1/</id>
-        <link href="https://32thirtytwo.github.io/SIXIANG32-s-blog/post/xian-xing-biao-xiang-jie-1/">
-        </link>
-        <updated>2020-04-30T13:18:57.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="线性表详解1">线性表详解1</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>线性表详解1 | SIXIANG&#39;s blog</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://32thirtytwo.github.io/SIXIANG32-s-blog//favicon.ico?v=1588297807521">
+<link rel="stylesheet" href="https://32thirtytwo.github.io/SIXIANG32-s-blog//styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="线性表详解1
+本文同步发表于我的洛谷博客
+泥萌好，欢迎来到我这只蒟蒻的笔记。本蒟蒻会用十分通俗易懂的语言和代码帮助一些和我一样的萌新，省的看一圈大佬的神解法由于窝不会什么太高深的语法，所以泥萌可以放心食用。
+————————华丽的分割线——..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://32thirtytwo.github.io/SIXIANG32-s-blog/">
+        <img src="https://32thirtytwo.github.io/SIXIANG32-s-blog//images/avatar.png?v=1588297807521" class="site-logo">
+        <h1 class="site-title">SIXIANG&#39;s blog</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/SIXIANG32-s-blog/post/about/" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      蒟蒻SIXIANG（三十二）的blog
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://32thirtytwo.github.io/SIXIANG32-s-blog//atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">线性表详解1</h2>
+            <div class="post-date">2020-04-30</div>
+            
+            <div class="post-content" v-pre>
+              <h1 id="线性表详解1">线性表详解1</h1>
 <p><a href="https://www.luogu.com.cn/blog/SX66666/xian-xing-biao-yang-xie">本文同步发表于我的洛谷博客</a><br>
 泥萌好，欢迎来到我这只蒟蒻的笔记。本蒟蒻会用十分通俗易懂的语言和代码帮助一些和我一样的萌新，<s>省的看一圈大佬的神解法</s>由于窝不会什么太高深的语法，所以泥萌可以放心食用。<br>
 ————————华丽的分割线——————————</p>
@@ -126,28 +195,51 @@ int main()
 }
 </code></pre>
 <p>听完了我这只大蒟蒻的通俗易懂的讲解，有木有理解呢？</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ABOUT ME]]></title>
-        <id>https://32thirtytwo.github.io/SIXIANG32-s-blog/post/about-me/</id>
-        <link href="https://32thirtytwo.github.io/SIXIANG32-s-blog/post/about-me/">
-        </link>
-        <updated>2020-04-30T04:58:34.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>我是SIXIANG，你也阔以叫我三十二，我是一名OIER，书法爱好者。</li>
-<li>邮箱：2392303708@qq.com</li>
-<li>QQ号码：2392303708(如果我不认识你就我就不加你QAQ）</li>
-<li>自学OI一年掌握了基本的语法，后来也报了班但是进度有点慢所以还是在自学一些高深的玩意儿，最近被树卡住了QAQ，哪个巨佬阔以私信我讲一下LCA的倍增法QAQ</li>
-<li>2009出生，小五</li>
-<li>沒有几个成就，自学OI一年2019合肥市市赛小学组3=200分QAQ，我太渣渣了</li>
-<li>OIer小窝月报联合创始人<br>
-<a href="https://www.luogu.com.cn/user/298549">在洛谷</a><br>
-<a href="https://atcoder.jp/users/SIXIANG">在ATcoder</a><br>
-<a href="https://codeforces.com/profile/SIXIANG">在codeforces</a><br>
-<a href="http://openjudge.cn/user/964665/">在openjudge</a><br>
-这就是我的大概了。</li>
-</ul>
-]]></content>
-    </entry>
-</feed>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://32thirtytwo.github.io/SIXIANG32-s-blog/post/about-me/">
+                  <h3 class="post-title">
+                    ABOUT ME
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+
+
+
+
+  </body>
+</html>
