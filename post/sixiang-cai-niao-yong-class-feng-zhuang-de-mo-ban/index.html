@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>文章归档 | SIXIANG&#39;s blog</title>
+<title>SIXIANG菜鸟用class封装的模板 | SIXIANG&#39;s blog</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -18,7 +18,17 @@
 
 
 
-    <meta name="description" content="蒟蒻SIXIANG（三十二）的blog">
+    <meta name="description" content="持续更新哦。
+1. 并查集
+class Set{
+	private:
+		int fa[100000];//父亲 
+		int siz[100000];//大小
+	public:
+		int Find(int x)
+		{
+			if(fa..." />
+    <meta name="keywords" content="" />
   </head>
   <body>
     <div id="app" class="main">
@@ -76,50 +86,53 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          
+          <div class="post-detail">
+            <h2 class="post-title">SIXIANG菜鸟用class封装的模板</h2>
+            <div class="post-date">2020-05-14</div>
+            
+            <div class="post-content" v-pre>
+              <p>持续更新哦。</p>
+<h2 id="1-并查集">1. 并查集</h2>
+<pre><code class="language-cpp">class Set{
+	private:
+		int fa[100000];//父亲 
+		int siz[100000];//大小
+	public:
+		int Find(int x)
+		{
+			if(fa[x]==x)return x;
+			else return fa[x]=Find(fa[x]);
+		} 
+		void Union(int u,int v)
+		{
+			int a=Find(u),b=Find(v),t;
+			if(siz[a]&gt;siz[b])t=a,a=b,b=t;
+		    fa[a]=b,siz[a]+=siz[b];
+		}
+		void prer(int n)
+		{
+			for(int p=1;p&lt;=n;p++)
+				fa[p]=p;
+		} 
+};
+</code></pre>
 
-          <h2 class="archives-title">文章归档</h2>
-          <div class="archives-container">
+            </div>
             
-              <h2 class="year" data-aos="fade-in" data-aos-delay="500">2020</h2>
-              
-                
-                  <article class="post">
-                    <a href="https://32thirtytwo.github.io/SIXIANG32-s-blog/post/sixiang-cai-niao-yong-class-feng-zhuang-de-mo-ban/">
-                      <h2 class="post-title">
-                        SIXIANG菜鸟用class封装的模板
-                      </h2>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://32thirtytwo.github.io/SIXIANG32-s-blog/post/xian-xing-biao-xiang-jie-1/">
-                      <h2 class="post-title">
-                        线性表详解1
-                      </h2>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://32thirtytwo.github.io/SIXIANG32-s-blog/post/about-me/">
-                      <h2 class="post-title">
-                        ABOUT ME
-                      </h2>
-                    </a>
-                  </article>
-                
-              
             
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://32thirtytwo.github.io/SIXIANG32-s-blog/post/xian-xing-biao-xiang-jie-1/">
+                  <h3 class="post-title">
+                    线性表详解1
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
           </div>
-
-          <div class="pagination-container">
-  
-  
-</div>
 
         </div>
       </div>
